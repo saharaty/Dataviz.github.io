@@ -46,7 +46,13 @@
                     }
                 };
 
-                Plotly.newPlot('chart-container', [trace], layout);
+                // Ensure that the chart container element exists before plotting
+                var chartContainer = document.getElementById('chart-container');
+                if (chartContainer) {
+                    Plotly.newPlot(chartContainer, [trace], layout);
+                } else {
+                    console.error('Chart container element not found.');
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
