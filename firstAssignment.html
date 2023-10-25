@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 123</title>
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
+
 <body>
     <div class="general">
         <h1>Ha ha!</h1>
     </div>
+
+    <div id="chart-container">
+        <!-- Chart will be rendered here -->
+    </div>
+
+    <script type="text/javascript">
+        // Load JSON data
+        fetch('Arlington.json')
+            .then(response => response.json())
+            .then(data => {
+                // Extract tree names and counts from JSON data
+                var treeNames = data.map(item => item.treeNames);
+                var counts = data.map(item => item.Count);
+
+                // Create a bar chart using Plotly
+                var trace = {
+                    x: treeNames,
+                    y: counts,
+                    type: 'bar',
+                    marker: {
+                        color: ['blue', 'green', 'red', 'purple', 'orange', 'yellow']
+                    }
+                };
+
+                var layout = {
+                    title: 'Bar Chart of Distinct Values',
+                    xaxis: {
+                        title: 'Distinct Values'
+                    },
+                    yaxis: {
+                        title: 'Count'
+                    }
+                };
+
+                Plotly.newPlot('chart-container', [trace], layout);
+            });
+    </script>
 </body>
+
 </html>
