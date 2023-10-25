@@ -1,7 +1,1 @@
-[
-    {"treeNames": "Tree A", "Count": 300},
-    {"treeNames": "Tree B", "Count": 450},
-    {"treeNames": "Tree C", "Count": 600},
-    {"treeNames": "Tree D", "Count": 200},
-    {"treeNames": "Tree E", "Count": 700}
-]
+[{"City":"Houston","Tree Name":"Lagerstroemia indica","Average Height":null,"Number of Trees":44320},{"City":"Houston","Tree Name":"Quercus virginiana","Average Height":null,"Number of Trees":44059},{"City":"Denver","Tree Name":"Fraxinus pennsylvanica","Average Height":null,"Number of Trees":25736},{"City":"Denver","Tree Name":"Gleditsia triacanthos","Average Height":null,"Number of Trees":24178},{"City":"Grand Rapids","Tree Name":"Acer platanoides","Average Height":null,"Number of Trees":20433},{"City":"Buffalo","Tree Name":"Acer platanoides","Average Height":null,"Number of Trees":13265},{"City":"Houston","Tree Name":"Celtis occidentalis","Average Height":null,"Number of Trees":13013},{"City":"Denver","Tree Name":"Tilia cordata","Average Height":null,"Number of Trees":12961},{"City":"Baltimore","Tree Name":"Acer rubrum","Average Height":90.3433042851,"Number of Trees":12910},{"City":"Denver","Tree Name":"Acer saccharinum","Average Height":null,"Number of Trees":12735},{"City":"Denver","Tree Name":"Fraxinus americana","Average Height":null,"Number of Trees":11922},{"City":"Houston","Tree Name":"Quercus nigra","Average Height":null,"Number of Trees":10804},{"City":"Denver","Tree Name":"Ulmus pumila","Average Height":null,"Number of Trees":10671},{"City":"Aurora","Tree Name":"Gleditsia triacanthos","Average Height":null,"Number of Trees":10428}]
