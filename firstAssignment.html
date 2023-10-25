@@ -22,41 +22,46 @@
 
     <script type="text/javascript">
         // Fetch JSON data from Arlington.json file
-        fetch('Arlington.json')
-            .then(response => response.json())
-            .then(data => {
-                // Extract tree names and counts from JSON data
-                var treeNames = data.map(item => item['Tree Name']);
-                var counts = data.map(item => item['Number of Trees']);
+// Fetch JSON data from Arlington.json file
+fetch('Arlington.json')
+    .then(response => response.json())
+    .then(data => {
+        // Sort data based on number of trees in descending order
+        data.sort((a, b) => b['Number of Trees'] - a['Number of Trees']);
 
-                // Create a bar chart using Plotly
-                var trace = {
-                    x: treeNames,
-                    y: counts,
-                    type: 'bar'
-                };
+        // Extract tree names and counts from sorted JSON data
+        var treeNames = data.map(item => item['Tree Name']);
+        var counts = data.map(item => item['Number of Trees']);
 
-                var layout = {
-                    title: 'Number of Trees in Arlington',
-                    xaxis: {
-                        title: 'Tree Names'
-                    },
-                    yaxis: {
-                        title: 'Number of Trees'
-                    }
-                };
+        // Create a bar chart using Plotly
+        var trace = {
+            x: treeNames,
+            y: counts,
+            type: 'bar'
+        };
 
-                // Ensure that the chart container element exists before plotting
-                var chartContainer = document.getElementById('chart-container');
-                if (chartContainer) {
-                    Plotly.newPlot(chartContainer, [trace], layout);
-                } else {
-                    console.error('Chart container element not found.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+        var layout = {
+            title: 'Number of Trees in Arlington (Sorted)',
+            xaxis: {
+                title: 'Tree Names'
+            },
+            yaxis: {
+                title: 'Number of Trees'
+            }
+        };
+
+        // Ensure that the chart container element exists before plotting
+        var chartContainer = document.getElementById('chart-container');
+        if (chartContainer) {
+            Plotly.newPlot(chartContainer, [trace], layout);
+        } else {
+            console.error('Chart container element not found.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+
     </script>
 </body>
 
