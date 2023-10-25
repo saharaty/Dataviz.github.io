@@ -21,35 +21,35 @@
     </div>
 
     <script type="text/javascript">
-        // Load JSON data
+        // Fetch JSON data from Arlington.json file
         fetch('Arlington.json')
             .then(response => response.json())
             .then(data => {
                 // Extract tree names and counts from JSON data
-                var treeNames = data.map(item => item.treeNames);
-                var counts = data.map(item => item.Count);
+                var treeNames = data.map(item => item['Tree Name']);
+                var counts = data.map(item => item['Number of Trees']);
 
                 // Create a bar chart using Plotly
                 var trace = {
                     x: treeNames,
                     y: counts,
-                    type: 'bar',
-                    marker: {
-                        color: ['blue', 'green', 'red', 'purple', 'orange', 'yellow']
-                    }
+                    type: 'bar'
                 };
 
                 var layout = {
-                    title: 'Bar Chart of Distinct Values',
+                    title: 'Number of Trees in Arlington',
                     xaxis: {
-                        title: 'Distinct Values'
+                        title: 'Tree Names'
                     },
                     yaxis: {
-                        title: 'Count'
+                        title: 'Number of Trees'
                     }
                 };
 
                 Plotly.newPlot('chart-container', [trace], layout);
+            })
+            .catch(error => {
+                console.error('Error:', error);
             });
     </script>
 </body>
