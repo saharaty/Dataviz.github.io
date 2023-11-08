@@ -44,7 +44,7 @@
     </div>
 
     <script>
-        // Load JSON data for tree species abundance
+       
         fetch('tree_species_abundance.json')
             .then(response => response.json())
             .then(data => {
@@ -53,7 +53,7 @@
                 const counts = data.map(item => item.count);
                 const cities = data.map(item => item.city);
 
-                // Prepare data for the plot
+                
                 const traces = [];
                 treeTypes.forEach(type => {
                     const typeCounts = counts.map((count, index) => (data[index].common_name === type ? count : 0));
@@ -69,7 +69,7 @@
                     });
                 });
 
-                // Define the layout
+               
                 const layout = {
                     barmode: 'stack',
                     title: 'Tree Species Abundance in Different Cities',
@@ -77,37 +77,37 @@
                     yaxis: { title: 'City' }
                 };
 
-                // Create the plot
+               
                 Plotly.newPlot('chart', traces, layout);
             })
             .catch(error => console.error('Error loading tree species abundance data:', error));
 
-        // Load JSON data for tree species abundance in Hawaii
+       
         fetch('tree_species_abundance_updated.json')
             .then(response => response.json())
             .then(data => {
-                // Extract unique city names
+                
                 const cityNames = [...new Set(data.flatMap(item => item.data.map(city => city.city)))];
 
-                // Display city names
+                
                 const cityNamesDiv = document.getElementById('city-names');
                 cityNamesDiv.innerHTML = cityNames.join('<br>');
 
-                // Define a list of colors for each tree type
+              
                 const colors = ['red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink', 'gray', 'cyan', 'magenta'];
 
-                // Create a chart for each tree type
+               
                 data.forEach((treeTypeData, index) => {
                     const treeType = treeTypeData.common_name;
                     const citiesData = treeTypeData.data;
 
-                    // Create a complete list of city names and counts (fill empty counts with 0)
+                    
                     const completeCityData = cityNames.map(city => {
                         const cityData = citiesData.find(data => data.city === city);
                         return cityData ? cityData.count : 0;
                     });
 
-                    // Create a chart for the current tree type
+                    
                     const chartDiv = document.createElement('div');
                     chartDiv.className = 'chart-container';
                     document.getElementById('chart').appendChild(chartDiv);
