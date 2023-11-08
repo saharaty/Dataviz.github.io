@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Species Abundance in Hawaii</title>
+    <!-- Include Plotly.js from a CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        #container {
+            display: flex;
+        }
+
+        #city-names {
+            width: 300px;
+            height: 400px;
+            margin-top: 100px;
+            padding-right: 10px;
+            line-height: 2;
+        }
+
+        #charts-container {
+            display: flex;
+        }
+
+        .chart-container {
+            width: 400px;
+            height: 400px;
+            margin-left: -50px;
+            margin-right: -50px;
+            padding-right: -20px;
+            margin-left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="city-names"></div>
+        <div id="charts-container"></div>
+    </div>
+
+    <script>
+       
+        fetch('tree_species_abundance_updated.json')
+            .then(response => response.json())
+            .then(data => {
+
+                console.log(data);
+               
+                const cityNames = [...new Set(data.flatMap(item => item.data.map(city => city.city)))];
+
+                const cityNamesDiv = document.getElementById('city-names');
+                cityNamesDiv.innerHTML = cityNames.join('<br>');
+
+                const colors = ['red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink', 'gray', 'cyan', 'magenta'];
+
+                data.forEach((treeTypeData, index) => {
+                    const treeType = treeTypeData.common_name;
+                    const citiesData = treeTypeData.data;
+                    
+                    const completeCityData = cityNames.map(city => {
+                        const cityData = citiesData.find(data => data.city === city);
+                        console.log(cityData);
+                        return cityData ? cityData.count : 0;
+                    });
+
+                    const chartDiv = document.createElement('div');
+                    chartDiv.className = 'chart-container';
+                    document.getElementById('charts-container').appendChild(chartDiv);
+
+                    const trace = {
+                        x: completeCityData,
+                        y: cityNames,
+                        type: 'bar',
+                        orientation: 'h',
+                        text: completeCityData.map(String),
+                        hoverinfo: 'text',
+                        marker: {
+                            color: colors[index % colors.length]
+                        }
+                    };
+
+                    const layout = {
+                        title: treeType,
+                        xaxis: { showticklabels: false },
+                        yaxis: { showticklabels: false }
+                    };
+
+                    Plotly.newPlot(chartDiv, [trace], layout);
+                });
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
+</body>
+
+</html>
