@@ -1,0 +1,1777 @@
+[
+    {
+        "common_name": "Other",
+        "data": [
+            {
+                "city": "honolulu",
+                "count": 17
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 94
+            },
+            {
+                "city": "kailua",
+                "count": 11
+            },
+            {
+                "city": "kaneohe",
+                "count": 24
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 25
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "kailua",
+                "count": 14
+            },
+            {
+                "city": "kaneohe",
+                "count": 17
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 13
+            },
+            {
+                "city": "kailua",
+                "count": 41
+            },
+            {
+                "city": "kaneohe",
+                "count": 13
+            },
+            {
+                "city": "honolulu",
+                "count": 74
+            },
+            {
+                "city": "kailua",
+                "count": 60
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 8
+            },
+            {
+                "city": "honolulu",
+                "count": 43
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 11
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 40
+            },
+            {
+                "city": "kailua",
+                "count": 45
+            },
+            {
+                "city": "honolulu",
+                "count": 9
+            },
+            {
+                "city": "honolulu",
+                "count": 51
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 15
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 18
+            },
+            {
+                "city": "kaneohe",
+                "count": 8
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 4
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 178
+            },
+            {
+                "city": "kailua",
+                "count": 10
+            },
+            {
+                "city": "kaneohe",
+                "count": 22
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 12
+            },
+            {
+                "city": "kailua",
+                "count": 7
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 10
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 23
+            },
+            {
+                "city": "kailua",
+                "count": 13
+            },
+            {
+                "city": "kaneohe",
+                "count": 32
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "kailua",
+                "count": 12
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 14
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 9
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 8
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "kailua",
+                "count": 45
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 10
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 8
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 24
+            },
+            {
+                "city": "kailua",
+                "count": 18
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 163
+            },
+            {
+                "city": "kailua",
+                "count": 34
+            },
+            {
+                "city": "kaneohe",
+                "count": 28
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 21
+            },
+            {
+                "city": "kailua",
+                "count": 177
+            },
+            {
+                "city": "kaneohe",
+                "count": 77
+            },
+            {
+                "city": "honolulu",
+                "count": 7
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 56
+            },
+            {
+                "city": "kailua",
+                "count": 12
+            },
+            {
+                "city": "honolulu",
+                "count": 186
+            },
+            {
+                "city": "kailua",
+                "count": 62
+            },
+            {
+                "city": "kaneohe",
+                "count": 14
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 231
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 20
+            },
+            {
+                "city": "honolulu",
+                "count": 7
+            },
+            {
+                "city": "kailua",
+                "count": 21
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 20
+            },
+            {
+                "city": "kailua",
+                "count": 38
+            },
+            {
+                "city": "kaneohe",
+                "count": 32
+            },
+            {
+                "city": "waipahu",
+                "count": 13
+            },
+            {
+                "city": "honolulu",
+                "count": 67
+            },
+            {
+                "city": "kailua",
+                "count": 12
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 62
+            },
+            {
+                "city": "kaneohe",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 7
+            },
+            {
+                "city": "honolulu",
+                "count": 151
+            },
+            {
+                "city": "kailua",
+                "count": 52
+            },
+            {
+                "city": "kaneohe",
+                "count": 27
+            },
+            {
+                "city": "waipahu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 26
+            },
+            {
+                "city": "kaneohe",
+                "count": 10
+            },
+            {
+                "city": "honolulu",
+                "count": 14
+            },
+            {
+                "city": "kailua",
+                "count": 25
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "kaneohe",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 26
+            },
+            {
+                "city": "kailua",
+                "count": 9
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 82
+            },
+            {
+                "city": "kailua",
+                "count": 170
+            },
+            {
+                "city": "kaneohe",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 16
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 51
+            },
+            {
+                "city": "kailua",
+                "count": 41
+            },
+            {
+                "city": "kaneohe",
+                "count": 21
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 53
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 20
+            },
+            {
+                "city": "kaneohe",
+                "count": 27
+            },
+            {
+                "city": "honolulu",
+                "count": 29
+            },
+            {
+                "city": "kailua",
+                "count": 319
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 25
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 10
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 7
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 6
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kailua",
+                "count": 6
+            },
+            {
+                "city": "kaneohe",
+                "count": 12
+            },
+            {
+                "city": "honolulu",
+                "count": 22
+            },
+            {
+                "city": "kailua",
+                "count": 123
+            },
+            {
+                "city": "kaneohe",
+                "count": 11
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 65
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 14
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 87
+            },
+            {
+                "city": "kailua",
+                "count": 91
+            },
+            {
+                "city": "kaneohe",
+                "count": 8
+            },
+            {
+                "city": "honolulu",
+                "count": 88
+            },
+            {
+                "city": "kailua",
+                "count": 49
+            },
+            {
+                "city": "kaneohe",
+                "count": 20
+            },
+            {
+                "city": "honolulu",
+                "count": 28
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 38
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 17
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 16
+            },
+            {
+                "city": "honolulu",
+                "count": 50
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 7
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "kaneohe",
+                "count": 7
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 159
+            },
+            {
+                "city": "kailua",
+                "count": 14
+            },
+            {
+                "city": "kaneohe",
+                "count": 20
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 35
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 7
+            },
+            {
+                "city": "honolulu",
+                "count": 33
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "ahuimanu",
+                "count": 7
+            },
+            {
+                "city": "heeia",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 14
+            },
+            {
+                "city": "kaneohe",
+                "count": 129
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 131
+            },
+            {
+                "city": "kailua",
+                "count": 46
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 7
+            },
+            {
+                "city": "honolulu",
+                "count": 36
+            },
+            {
+                "city": "kailua",
+                "count": 7
+            },
+            {
+                "city": "kaneohe",
+                "count": 13
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 40
+            },
+            {
+                "city": "kailua",
+                "count": 27
+            },
+            {
+                "city": "kaneohe",
+                "count": 8
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 6
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 11
+            },
+            {
+                "city": "honolulu",
+                "count": 11
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 32
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "honolulu",
+                "count": 13
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "kaneohe",
+                "count": 10
+            },
+            {
+                "city": "honolulu",
+                "count": 8
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 17
+            },
+            {
+                "city": "kaneohe",
+                "count": 76
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 10
+            },
+            {
+                "city": "honolulu",
+                "count": 65
+            },
+            {
+                "city": "kailua",
+                "count": 40
+            },
+            {
+                "city": "kaneohe",
+                "count": 60
+            },
+            {
+                "city": "honolulu",
+                "count": 11
+            },
+            {
+                "city": "kailua",
+                "count": 119
+            },
+            {
+                "city": "kaneohe",
+                "count": 11
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 7
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 11
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "ahuimanu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 142
+            },
+            {
+                "city": "kailua",
+                "count": 74
+            },
+            {
+                "city": "kaneohe",
+                "count": 26
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 36
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 11
+            },
+            {
+                "city": "kaneohe",
+                "count": 10
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 38
+            },
+            {
+                "city": "kailua",
+                "count": 11
+            },
+            {
+                "city": "kaneohe",
+                "count": 10
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 44
+            },
+            {
+                "city": "kailua",
+                "count": 22
+            },
+            {
+                "city": "kaneohe",
+                "count": 18
+            },
+            {
+                "city": "ahuimanu",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 155
+            },
+            {
+                "city": "kailua",
+                "count": 55
+            },
+            {
+                "city": "kaneohe",
+                "count": 14
+            },
+            {
+                "city": "honolulu",
+                "count": 4
+            },
+            {
+                "city": "kailua",
+                "count": 21
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 80
+            },
+            {
+                "city": "kailua",
+                "count": 51
+            },
+            {
+                "city": "kaneohe",
+                "count": 71
+            },
+            {
+                "city": "honolulu",
+                "count": 16
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 33
+            },
+            {
+                "city": "kailua",
+                "count": 251
+            },
+            {
+                "city": "kaneohe",
+                "count": 64
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 36
+            },
+            {
+                "city": "kaneohe",
+                "count": 19
+            },
+            {
+                "city": "honolulu",
+                "count": 12
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 95
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 8
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 20
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 5
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "kailua",
+                "count": 6
+            },
+            {
+                "city": "kaneohe",
+                "count": 9
+            },
+            {
+                "city": "ahuimanu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 53
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "kaneohe",
+                "count": 16
+            },
+            {
+                "city": "waipahu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "kailua",
+                "count": 11
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 1
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 38
+            },
+            {
+                "city": "kailua",
+                "count": 10
+            },
+            {
+                "city": "kaneohe",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 143
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "kailua",
+                "count": 4
+            },
+            {
+                "city": "honolulu",
+                "count": 3
+            },
+            {
+                "city": "kaneohe",
+                "count": 17
+            },
+            {
+                "city": "honolulu",
+                "count": 10
+            },
+            {
+                "city": "kailua",
+                "count": 5
+            },
+            {
+                "city": "honolulu",
+                "count": 161
+            },
+            {
+                "city": "kailua",
+                "count": 86
+            },
+            {
+                "city": "kaneohe",
+                "count": 40
+            },
+            {
+                "city": "kailua",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kaneohe",
+                "count": 2
+            },
+            {
+                "city": "honolulu",
+                "count": 36
+            },
+            {
+                "city": "kailua",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 2
+            },
+            {
+                "city": "kailua",
+                "count": 21
+            },
+            {
+                "city": "honolulu",
+                "count": 6
+            },
+            {
+                "city": "honolulu",
+                "count": 68
+            }
+        ]
+    },
+    {
+        "common_name": "coconut palm",
+        "data": [
+            {
+                "city": "honolulu",
+                "count": 635
+            },
+            {
+                "city": "kailua",
+                "count": 972
+            },
+            {
+                "city": "kaneohe",
+                "count": 104
+            }
+        ]
+    },
+    {
+        "common_name": "manila palm",
+        "data": [
+            {
+                "city": "honolulu",
+                "count": 243
+            },
+            {
+                "city": "kailua",
+                "count": 983
+            },
+            {
+                "city": "kaneohe",
+                "count": 297
+            }
+        ]
+    },
+    {
+        "common_name": "monkeypod",
+        "data": [
+            {
+                "city": "aiea",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 718
+            },
+            {
+                "city": "kailua",
+                "count": 79
+            },
+            {
+                "city": "kaneohe",
+                "count": 47
+            }
+        ]
+    },
+    {
+        "common_name": "pink tecoma",
+        "data": [
+            {
+                "city": "honolulu",
+                "count": 421
+            },
+            {
+                "city": "kailua",
+                "count": 372
+            },
+            {
+                "city": "kaneohe",
+                "count": 145
+            }
+        ]
+    },
+    {
+        "common_name": "rainbow shower",
+        "data": [
+            {
+                "city": "honolulu",
+                "count": 534
+            },
+            {
+                "city": "kailua",
+                "count": 219
+            },
+            {
+                "city": "kaneohe",
+                "count": 154
+            },
+            {
+                "city": "waipahu",
+                "count": 27
+            }
+        ]
+    },
+    {
+        "common_name": "Total",
+        "data": [
+            {
+                "city": "ahuimanu",
+                "count": 14
+            },
+            {
+                "city": "aiea",
+                "count": 1
+            },
+            {
+                "city": "heeia",
+                "count": 1
+            },
+            {
+                "city": "honolulu",
+                "count": 6845
+            },
+            {
+                "city": "kailua",
+                "count": 5393
+            },
+            {
+                "city": "kaneohe",
+                "count": 2058
+            },
+            {
+                "city": "waipahu",
+                "count": 43
+            }
+        ]
+    }
+]

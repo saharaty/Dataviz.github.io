@@ -1,0 +1,117 @@
+[
+    {
+        "city": "waipahu",
+        "common_name": "rainbow shower",
+        "count": 27
+    },
+    {
+        "city": "kaneohe",
+        "common_name": "rainbow shower",
+        "count": 154
+    },
+    {
+        "city": "kailua",
+        "common_name": "rainbow shower",
+        "count": 219
+    },
+    {
+        "city": "honolulu",
+        "common_name": "rainbow shower",
+        "count": 534
+    },
+    {
+        "city": "kaneohe",
+        "common_name": "pink tecoma",
+        "count": 145
+    },
+    {
+        "city": "kailua",
+        "common_name": "pink tecoma",
+        "count": 372
+    },
+    {
+        "city": "honolulu",
+        "common_name": "pink tecoma",
+        "count": 421
+    },
+    {
+        "city": "aiea",
+        "common_name": "monkeypod",
+        "count": 1
+    },
+    {
+        "city": "kaneohe",
+        "common_name": "monkeypod",
+        "count": 47
+    },
+    {
+        "city": "kailua",
+        "common_name": "monkeypod",
+        "count": 79
+    },
+    {
+        "city": "honolulu",
+        "common_name": "monkeypod",
+        "count": 718
+    },
+    {
+        "city": "honolulu",
+        "common_name": "manila palm",
+        "count": 243
+    },
+    {
+        "city": "kaneohe",
+        "common_name": "manila palm",
+        "count": 297
+    },
+    {
+        "city": "kailua",
+        "common_name": "manila palm",
+        "count": 983
+    },
+    {
+        "city": "kaneohe",
+        "common_name": "coconut palm",
+        "count": 104
+    },
+    {
+        "city": "honolulu",
+        "common_name": "coconut palm",
+        "count": 635
+    },
+    {
+        "city": "kailua",
+        "common_name": "coconut palm",
+        "count": 972
+    },
+    {
+        "city": "heeia",
+        "common_name": "Other",
+        "count": 1
+    },
+    {
+        "city": "ahuimanu",
+        "common_name": "Other",
+        "count": 14
+    },
+    {
+        "city": "waipahu",
+        "common_name": "Other",
+        "count": 16
+    },
+    {
+        "city": "kaneohe",
+        "common_name": "Other",
+        "count": 1311
+    },
+    {
+        "city": "kailua",
+        "common_name": "Other",
+        "count": 2768
+    },
+    {
+        "city": "honolulu",
+        "common_name": "Other",
+        "count": 4294
+    }
+]
