@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Species Abundance</title>
+    <!-- Include Plotly.js from a different CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist@latest/plotly.min.js"></script>
+</head>
+
+<body>
+    <div id="chart"></div>
+
+    <script>
+        fetch('tree_species_abundance.json')
+            .then(response => response.json())
+            .then(data => {
+               
+                const treeTypes = [...new Set(data.map(item => item.common_name))];
+                const counts = data.map(item => item.count);
+                const cities = data.map(item => item.city);
+      
+                const traces = [];
+                treeTypes.forEach(type => {
+                    const typeCounts = counts.map((count, index) => (data[index].common_name === type ? count : 0));
+
+                    traces.push({
+                        y: cities,
+                        x: typeCounts,
+                        type: 'bar',
+                        orientation: 'h',
+                        name: type,
+                        text: [],
+                        hoverinfo: 'x'
+                    });
+                });
+
+               
+                const layout = {
+                    barmode: 'stack',
+                    title: 'Tree Species Abundance in Different Cities',
+                    xaxis: { title: 'Count' },
+                    yaxis: { title: 'City' }
+                };
+              
+                Plotly.newPlot('chart', traces, layout);
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
+</body>
+
+</html>
