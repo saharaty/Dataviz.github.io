@@ -4,231 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combined Tree Species Abundance Charts</title>
+    <title>Tree Species Abundance</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist@latest/plotly.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-      
-        #container {
-            display: flex;
-        }
-
-        #city-names {
-            width: 300px;
-            height: 400px;
-            margin-top: 100px;
-            padding-right: 10px;
-            line-height: 2;
-        }
-
-        #charts-container {
-            display: flex;
-        }
-
-        .chart-container {
-            width: 400px;
-            height: 400px;
-            margin-left: -50px;
-            margin-right: -50px;
-            padding-right: -20px;
-            margin-left: -10px;
-        }
-    </style>
 </head>
 
 <body>
     <label for="cities">Select a city:</label>
     <select id="cities"></select>
-    <div id="chart1"></div>
-    <div id="chart2"></div>
-    <div id="container">
-        <div id="city-names"></div>
-        <div id="charts-container"></div>
-    </div>
-    <canvas id="myChart" width="400" height="200"></canvas>
+    <div id="chart"></div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Chart 1: Tree Species Abundance in a Specific City
-            const citiesDropdown1 = document.getElementById("cities");
-            const chartDiv1 = document.getElementById("chart1");
+            const citiesDropdown = document.getElementById("cities");
+            const chartDiv = document.getElementById("chart");
 
-        
+            // Fetch data from JSON file
             fetch("Arlington.json")
                 .then(response => response.json())
                 .then(data => {
-                    // Chart 1 rendering logic using Plotly.js
-                    const trace1 = {
-                        x: [data["Tree Name"]],
-                        y: [data["Number of Trees"]],
-                        type: 'bar',
-                    };
-                    const layout1 = {
-                        title: `Tree Species Abundance in ${data.City}`,
-                        xaxis: {
-                            title: 'Tree Name'
-                        },
-                        yaxis: {
-                            title: 'Number of Trees'
-                        }
-                    };
-                    Plotly.newPlot(chartDiv1, [trace1], layout1);
-                });
-
-            // Chart 2: Tree Species Abundance in Different Cities
-            const chartDiv2 = document.getElementById("chart2");
-
-          
-            fetch('tree_species_abundance.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Chart 2 rendering logic using Plotly.js
-                    const treeTypes = [...new Set(data.map(item => item.common_name))];
-                    const counts = data.map(item => item.count);
-                    const cities = data.map(item => item.city);
-
-                    const traces = treeTypes.map((type, index) => {
-                        const typeCounts = counts.map((count, i) => (data[i].common_name === type ? count : 0));
-                        return {
-                            y: cities,
-                            x: typeCounts,
-                            type: 'bar',
-                            orientation: 'h',
-                            name: type,
-                            text: typeCounts.map(String),
-                            hoverinfo: 'text',
-                            marker: {
-                                color: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.6)`
-                            }
-                        };
+                    console.log(data);
+                    // Populate the dropdown menu with cities
+                    data.forEach(item => {
+                        const option = document.createElement("option");
+                        option.value = item.City;
+                        option.text = item.City;
+                        citiesDropdown.appendChild(option);
                     });
 
-                    const layout2 = {
-                        barmode: 'stack',
-                        title: 'Tree Species Abundance in Different Cities',
-                        xaxis: {
-                            title: 'Count'
-                        },
-                        yaxis: {
-                            title: 'City'
-                        }
-                    };
+                    // Event listener for dropdown change
+                    citiesDropdown.addEventListener("change", function () {
+                        const selectedCity = this.value;
+                        const cityData = data.find(item => item.City === selectedCity);
 
-                    Plotly.newPlot(chartDiv2, traces, layout2);
-                });
-
-            // Chart 3: Tree Species Abundance in Multiple Cities
-            const cityNamesDiv = document.getElementById('city-names');
-
-            
-            fetch('tree_species_abundance_updated.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Chart 3 rendering logic
-                    const cityNames = [...new Set(data.flatMap(item => item.data.map(city => city.city)))];
-                    cityNamesDiv.innerHTML = cityNames.join('<br>');
-
-                    const colors = ['red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink', 'gray', 'cyan', 'magenta'];
-
-                    data.forEach((treeTypeData, index) => {
-                        const treeType = treeTypeData.common_name;
-                        const citiesData = treeTypeData.data;
-
-                        const completeCityData = cityNames.map(city => {
-                            const cityData = citiesData.find(data => data.city === city);
-                            return cityData ? cityData.count : 0;
-                        });
-
-                        const chartDiv3 = document.createElement('div');
-                        chartDiv3.className = 'chart-container';
-                        document.getElementById('charts-container').appendChild(chartDiv3);
-
-                        const trace3 = {
-                            x: completeCityData,
-                            y: cityNames,
+                        // Create bar chart
+                        const trace = {
+                            x: [cityData["Tree Name"]],
+                            y: [cityData["Number of Trees"]],
                             type: 'bar',
-                            orientation: 'h',
-                            text: completeCityData.map(String),
-                            hoverinfo: 'text',
-                            marker: {
-                                color: colors[index % colors.length]
-                            }
                         };
 
-                        const layout3 = {
-                            title: treeType,
+                        const layout = {
+                            title: `Tree Species Abundance in ${selectedCity}`,
                             xaxis: {
-                                showticklabels: false
+                                title: 'Tree Name'
                             },
                             yaxis: {
-                                showticklabels: false
+                                title: 'Number of Trees'
                             }
                         };
 
-                        Plotly.newPlot(chartDiv3, [trace3], layout3);
+                        Plotly.newPlot(chartDiv, [trace], layout);
                     });
-                });
-
-            // Chart 4: Stacked Bar Chart
-            const ctx = document.getElementById('myChart').getContext('2d');
-
-            
-            fetch('tree_species_abundance_3.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Chart 4 rendering logic using Chart.js
-                    const cityCounts = {};
-
-                    data.forEach(function (item) {
-                        cityCounts[item.city] = (cityCounts[item.city] || 0) + item.count;
-                    });
-
-                    const commonNames = Array.from(new Set(data.map(item => item.common_name)));
-                    const datasets = commonNames.map(function (commonName, index) {
-                        const dataPoints = Object.keys(cityCounts).map(function (city) {
-                            const count = data.find(item => item.city === city && item.common_name === commonName)?.count || 0;
-                            const percentage = (count / cityCounts[city] * 100).toFixed(2);
-                            return percentage;
-                        });
-
-                        return {
-                            label: commonName,
-                            data: dataPoints,
-                            backgroundColor: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.6)`,
-                            borderWidth: 1
-                        };
-                    });
-
-                    const options = {
-                        indexAxis: 'y',
-                        scales: {
-                            x: {
-                                stacked: true,
-                                beginAtZero: true,
-                                min: 0,
-                                max: 100,
-                                ticks: {
-                                    callback: function (value) {
-                                        return value + '%';
-                                    }
-                                }
-                            },
-                            y: {
-                                stacked: true
-                            }
-                        }
-                    };
-
-                    new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: Object.keys(cityCounts),
-                            datasets: datasets
-                        },
-                        options: options
-                    });
-                });
+                })
+                .catch(error => console.error("Error fetching data:", error));
         });
     </script>
 </body>
