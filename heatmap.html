@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tree Species Abundance Heatmap</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .cell {
+      stroke: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Tree Species Abundance Heatmap</h1>
+
+<div id="heatmap"></div>
+
+<script>
+  const data = [
+  [{"city":"austin","scientific_name":"carya illinoinensis","count":916},
+  {"city":"austin","scientific_name":"ulmus crassifolia","count":831},
+  {"city":"austin","scientific_name":"quercus virginiana","count":789},
+  {"city":"austin","scientific_name":"lagerstroemia indica","count":609},
+  {"city":"austin","scientific_name":"quercus fusiformis","count":591},
+  {"city":"baltimore","scientific_name":"acer rubrum","count":12895},
+  {"city":"baltimore","scientific_name":"zelkova serrata","count":6706},
+  {"city":"baltimore","scientific_name":"platanus acerifolia","count":6033},
+  {"city":"baltimore","scientific_name":"tilia cordata","count":5933},
+  {"city":"baltimore","scientific_name":"prunus","count":5789},
+  {"city":"garden grove","scientific_name":"lagerstroemia","count":2355},
+  {"city":"garden grove","scientific_name":"lophostemon confertus","count":1643},
+  {"city":"garden grove","scientific_name":"cupaniopsis anacardioides","count":1438},
+  {"city":"garden grove","scientific_name":"pinus canariensis","count":1049},
+  {"city":"garden grove","scientific_name":"syagrus romanzoffianum","count":897},
+  {"city":"honolulu","scientific_name":"albizia saman","count":718},
+  {"city":"honolulu","scientific_name":"cocos nucifera","count":635},
+  {"city":"honolulu","scientific_name":"cassia nealiae","count":534},
+  {"city":"honolulu","scientific_name":"tabebuia heterophylla","count":421},
+  {"city":"honolulu","scientific_name":"adonidia merrillii","count":243},
+  {"city":"huntington beach","scientific_name":"tilia tomentosa","count":9966},
+  {"city":"huntington beach","scientific_name":"syagrus romanzoffianum","count":4681},
+  {"city":"huntington beach","scientific_name":"washingtonia robusta","count":4037},
+  {"city":"huntington beach","scientific_name":"lagerstroemia","count":3813},
+  {"city":"huntington beach","scientific_name":"eucalyptus camaldulensis","count":2574}]
+
+
+  ];
+
+  const width = 800;
+  const height = 400;
+  const margin = { top: 30, right: 30, bottom: 30, left: 60 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+
+  const cities = Array.from(new Set(data.map(d => d.city)));
+  const species = Array.from(new Set(data.map(d => d.scientific_name)));
+
+  const svg = d3.select("#heatmap")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const x = d3.scaleBand()
+    .domain(cities)
+    .range([0, innerWidth])
+    .padding(0.1);
+
+  const y = d3.scaleBand()
+    .domain(species)
+    .range([innerHeight, 0])
+    .padding(0.1);
+
+  const colorScale = d3.scaleSequential(d3.interpolateOrRd) 
+    .domain([0, d3.max(data, d => d.count)]);
+
+  g.selectAll(".cell")
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("class", "cell")
+    .attr("x", d => x(d.city))
+    .attr("y", d => y(d.scientific_name))
+    .attr("width", x.bandwidth())
+    .attr("height", y.bandwidth())
+    .attr("fill", d => colorScale(d.count));
+
+  const xAxis = d3.axisBottom(x);
+  const yAxis = d3.axisLeft(y);
+
+  g.append("g")
+    .attr("transform", `translate(0, ${innerHeight})`)
+    .call(xAxis)
+    .selectAll("text")
+    .attr("transform", "rotate(-45)")
+    .style("text-anchor", "end");
+
+  g.append("g")
+    .call(yAxis);
+
+  g.append("text")
+    .attr("text-anchor", "middle")
+    .attr("transform", `translate(-40,${innerHeight / 2}) rotate(-90)`)
+    .text("Tree Species");
+
+  g.append("text")
+    .attr("text-anchor", "middle")
+    .attr("transform", `translate(${innerWidth / 2},${innerHeight + 40})`)
+    .text("Cities");
+
+  svg.append("text")
+    .attr("x", width / 2)
+    .attr("y", margin.top / 2)
+    .attr("text-anchor", "middle")
+    .style("font-size", "20px")
+    .text("Tree Species Abundance Heatmap");
+</script>
+
+</body>
+</html>
