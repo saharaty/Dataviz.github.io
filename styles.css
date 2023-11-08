@@ -1,4 +1,4 @@
-/* Import fonts */
+
 @font-face {
     font-family: 'Fira Sans';
     src: url('https://fonts.google.com/specimen/Fira+Sans?query=fira+sans') format('woff2');
@@ -12,7 +12,7 @@
     font-weight: 700;
 }
 
-/* Global styles */
+
 body {
     font-family: 'Fira Sans', sans-serif;
     margin: 0;
@@ -33,7 +33,7 @@ p {
     font-size: 16px;
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 24px;
